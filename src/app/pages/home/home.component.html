@@ -1,6 +1,9 @@
 <!--Home-->
 <div class="card">
   <div class="card-body">
-    <h1>Home page</h1>
+    <h1>{{student.name}}</h1>
+    <p class="text-danger">{{student.address}}</p>
+    <p *ngIf="student.age >=18" class="text-info">{{student.age}}</p>
+    <p *ngIf="student.age <18" class="text-warning">{{student.age}}</p>
   </div>
 </div>
