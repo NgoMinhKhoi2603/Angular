@@ -11,6 +11,9 @@ import {Route, RouterModule, Routes} from "@angular/router";
 import {TheduComponent} from "./pages/thedu/thedu.component";
 import {NgominhkhoiComponent} from "./pages/ngominhkhoi/ngominhkhoi.component";
 import {RegisterComponent} from "./pages/register/register.component";
+import {FoodComponent} from "./food/food.component";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {Food2Component} from "./food/food2.component";
 
 //khai bao cac page trong website
 const appRoutes: Routes = [
@@ -19,13 +22,16 @@ const appRoutes: Routes = [
   {path: 'thedu', component: TheduComponent},
   {path: 'ngominhkhoi', component: NgominhkhoiComponent},
   {path: 'register', component: RegisterComponent},
+  {path: 'food', component: FoodComponent},
+  {path: 'food2', component: Food2Component},
 ]
 @NgModule({
   declarations: [
-    AppComponent, StudentComponent,ClassroomComponent,HomeComponent,LoginComponent
+    AppComponent, StudentComponent,ClassroomComponent,HomeComponent,LoginComponent, FoodComponent, Food2Component,
   ],
   imports: [
-    BrowserModule, FormsModule, RouterModule.forRoot(appRoutes)
+    BrowserModule, FormsModule, RouterModule.forRoot(appRoutes),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
