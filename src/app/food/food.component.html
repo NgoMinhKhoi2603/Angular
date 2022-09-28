@@ -7,6 +7,17 @@
     </ul>
   </aside>
   <div class="content col">
-
+    <div class="row">
+      <div class="col-3" *ngFor="let n of foods">
+        <div class="card">
+          <img src="{{n.image}}"/>
+          <div class="card-body">
+            <h4>{{n.name}}</h4>
+            <p>{{n.description}}</p>
+            <p><span class="text-danger">{{n.price}}$</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

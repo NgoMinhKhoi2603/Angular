@@ -1,7 +1,6 @@
 import {Component} from "@angular/core";
 import {IFoodMenu, IMenu} from "../interfaces/foodmenu.interface";
 import {HttpClient} from "@angular/common/http";
-import {subscribeOn} from "rxjs";
 
 @Component({
   selector: 'app-food2',

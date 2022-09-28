@@ -14,6 +14,7 @@ import {RegisterComponent} from "./pages/register/register.component";
 import {FoodComponent} from "./food/food.component";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {Food2Component} from "./food/food2.component";
+import {WeatherComponent} from "./weather/weather.component";
 
 //khai bao cac page trong website
 const appRoutes: Routes = [
@@ -24,10 +25,11 @@ const appRoutes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'food', component: FoodComponent},
   {path: 'food2', component: Food2Component},
+  {path: 'weather', component: WeatherComponent},
 ]
 @NgModule({
   declarations: [
-    AppComponent, StudentComponent,ClassroomComponent,HomeComponent,LoginComponent, FoodComponent, Food2Component,
+    AppComponent, StudentComponent,ClassroomComponent,HomeComponent,LoginComponent, FoodComponent, Food2Component,WeatherComponent
   ],
   imports: [
     BrowserModule, FormsModule, RouterModule.forRoot(appRoutes),
