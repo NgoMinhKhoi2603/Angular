@@ -19,7 +19,7 @@ export interface Weather {
 
 export interface List {
   dt: number;
-  main: Main[];
+  main: Main;
   weather: Weather[];
   visibility: number;
   pop: number;

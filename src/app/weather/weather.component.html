@@ -1,7 +1,8 @@
 <div class="row">
   <div class="box col-3" *ngFor="let n of list" >
-    <div class="time"></div>
-    <div class="temp" >{{n.main}}</div>
-    <div class="description"></div>
+    <div class="time">{{n.dt_txt}}</div>
+    <div class="temp" >{{n.main.temp}}<sup>o</sup>C</div>
+    <div class="description">{{n.weather[0].description}}</div>
+    <img class="image" src="https://openweathermap.org/img/wn/{{n.weather[0].icon}}@2x.png"/>
   </div>
 </div>

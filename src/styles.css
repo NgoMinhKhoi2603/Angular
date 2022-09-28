@@ -54,3 +54,8 @@ img{
 .nav-item{
   margin-left: 5px;
 }
+.image{
+  position:relative;
+  top: -50px;
+  left: 50px;
+}
